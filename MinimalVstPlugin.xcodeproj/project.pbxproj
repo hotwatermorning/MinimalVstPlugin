@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A0B60BA15A73C6A0095411B /* audioeffect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B603215A73C6A0095411B /* audioeffect.cpp */; };
+		3A0B60BB15A73C6A0095411B /* audioeffectx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B603415A73C6A0095411B /* audioeffectx.cpp */; };
+		3A0B60BC15A73C6A0095411B /* vstplugmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B603615A73C6A0095411B /* vstplugmain.cpp */; };
+		3A0B611415A73E290095411B /* MinimalVstPlugin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A0B611215A73E290095411B /* MinimalVstPlugin.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A0B5F6815A73C690095411B /* aeffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeffect.h; sourceTree = "<group>"; };
+		3A0B5F6915A73C690095411B /* aeffectx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeffectx.h; sourceTree = "<group>"; };
+		3A0B5F6A15A73C690095411B /* vstfxstore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vstfxstore.h; sourceTree = "<group>"; };
+		3A0B603115A73C6A0095411B /* aeffeditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeffeditor.h; sourceTree = "<group>"; };
+		3A0B603215A73C6A0095411B /* audioeffect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = audioeffect.cpp; sourceTree = "<group>"; };
+		3A0B603315A73C6A0095411B /* audioeffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audioeffect.h; sourceTree = "<group>"; };
+		3A0B603415A73C6A0095411B /* audioeffectx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = audioeffectx.cpp; sourceTree = "<group>"; };
+		3A0B603515A73C6A0095411B /* audioeffectx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audioeffectx.h; sourceTree = "<group>"; };
+		3A0B603615A73C6A0095411B /* vstplugmain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vstplugmain.cpp; sourceTree = "<group>"; };
+		3A0B611215A73E290095411B /* MinimalVstPlugin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MinimalVstPlugin.cpp; sourceTree = "<group>"; };
+		3A0B611315A73E290095411B /* MinimalVstPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinimalVstPlugin.h; sourceTree = "<group>"; };
+		508817D409F0C9AD0071BF1A /* MinimalVstPlugin.vst */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinimalVstPlugin.vst; sourceTree = BUILT_PRODUCTS_DIR; };
+		508817D609F0C9AD0071BF1A /* MinimalVstPlugin-Info.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.xml; path = "MinimalVstPlugin-Info.plist"; sourceTree = "<group>"; };
+		508817E609F0CA040071BF1A /* MinimalVstPluginProj.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; path = MinimalVstPluginProj.xcconfig; sourceTree = "<group>"; };
+		508817E709F0CA040071BF1A /* MinimalVstPluginTarget.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; path = MinimalVstPluginTarget.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		508817D209F0C9AD0071BF1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A0B5F6515A73C690095411B /* MinimalVstPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				3A0B611215A73E290095411B /* MinimalVstPlugin.cpp */,
+				3A0B611315A73E290095411B /* MinimalVstPlugin.h */,
+				3A0B5F6615A73C690095411B /* pluginterfaces */,
+				3A0B5F6B15A73C690095411B /* public.sdk */,
+			);
+			path = MinimalVstPlugin;
+			sourceTree = "<group>";
+		};
+		3A0B5F6615A73C690095411B /* pluginterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				3A0B5F6715A73C690095411B /* vst2.x */,
+			);
+			path = pluginterfaces;
+			sourceTree = "<group>";
+		};
+		3A0B5F6715A73C690095411B /* vst2.x */ = {
+			isa = PBXGroup;
+			children = (
+				3A0B5F6815A73C690095411B /* aeffect.h */,
+				3A0B5F6915A73C690095411B /* aeffectx.h */,
+				3A0B5F6A15A73C690095411B /* vstfxstore.h */,
+			);
+			path = vst2.x;
+			sourceTree = "<group>";
+		};
+		3A0B5F6B15A73C690095411B /* public.sdk */ = {
+			isa = PBXGroup;
+			children = (
+				3A0B602F15A73C6A0095411B /* source */,
+			);
+			path = public.sdk;
+			sourceTree = "<group>";
+		};
+		3A0B602F15A73C6A0095411B /* source */ = {
+			isa = PBXGroup;
+			children = (
+				3A0B603015A73C6A0095411B /* vst2.x */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		3A0B603015A73C6A0095411B /* vst2.x */ = {
+			isa = PBXGroup;
+			children = (
+				3A0B603115A73C6A0095411B /* aeffeditor.h */,
+				3A0B603215A73C6A0095411B /* audioeffect.cpp */,
+				3A0B603315A73C6A0095411B /* audioeffect.h */,
+				3A0B603415A73C6A0095411B /* audioeffectx.cpp */,
+				3A0B603515A73C6A0095411B /* audioeffectx.h */,
+				3A0B603615A73C6A0095411B /* vstplugmain.cpp */,
+			);
+			path = vst2.x;
+			sourceTree = "<group>";
+		};
+		508817C209F0C9740071BF1A = {
+			isa = PBXGroup;
+			children = (
+				508817E509F0C9EF0071BF1A /* Configuration Files */,
+				508817D609F0C9AD0071BF1A /* MinimalVstPlugin-Info.plist */,
+				508817F509F0CAB50071BF1A /* Sources */,
+				5088180609F0CDD00071BF1A /* External Frameworks and Libraries */,
+				508817D509F0C9AD0071BF1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		508817D509F0C9AD0071BF1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				508817D409F0C9AD0071BF1A /* MinimalVstPlugin.vst */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		508817E509F0C9EF0071BF1A /* Configuration Files */ = {
+			isa = PBXGroup;
+			children = (
+				508817E609F0CA040071BF1A /* MinimalVstPluginProj.xcconfig */,
+				508817E709F0CA040071BF1A /* MinimalVstPluginTarget.xcconfig */,
+			);
+			name = "Configuration Files";
+			sourceTree = "<group>";
+		};
+		508817F509F0CAB50071BF1A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3A0B5F6515A73C690095411B /* MinimalVstPlugin */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		5088180609F0CDD00071BF1A /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		508817D309F0C9AD0071BF1A /* MinimalVstPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 508817D709F0C9AE0071BF1A /* Build configuration list for PBXNativeTarget "MinimalVstPlugin" */;
+			buildPhases = (
+				508817D009F0C9AD0071BF1A /* Resources */,
+				508817D109F0C9AD0071BF1A /* Sources */,
+				508817D209F0C9AD0071BF1A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MinimalVstPlugin;
+			productName = MinimalVstPlugin;
+			productReference = 508817D409F0C9AD0071BF1A /* MinimalVstPlugin.vst */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		508817C409F0C9740071BF1A /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 508817C509F0C9740071BF1A /* Build configuration list for PBXProject "MinimalVstPlugin" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 508817C209F0C9740071BF1A;
+			productRefGroup = 508817D509F0C9AD0071BF1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				508817D309F0C9AD0071BF1A /* MinimalVstPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		508817D009F0C9AD0071BF1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		508817D109F0C9AD0071BF1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A0B60BA15A73C6A0095411B /* audioeffect.cpp in Sources */,
+				3A0B60BB15A73C6A0095411B /* audioeffectx.cpp in Sources */,
+				3A0B60BC15A73C6A0095411B /* vstplugmain.cpp in Sources */,
+				3A0B611415A73E290095411B /* MinimalVstPlugin.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		508817C609F0C9740071BF1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 508817E609F0CA040071BF1A /* MinimalVstPluginProj.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PKGINFO_FILE = YES;
+				INFOPLIST_FILE = "MinimalVstPlugin-Info.plist";
+				INFOPLIST_PREPROCESS = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				PRODUCT_NAME = MinimalVstPlugin;
+				SDKROOT = macosx10.6;
+				USER_HEADER_SEARCH_PATHS = "./MinimalVstPlugin/**";
+				WRAPPER_EXTENSION = vst;
+			};
+			name = Debug;
+		};
+		508817C709F0C9740071BF1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 508817E609F0CA040071BF1A /* MinimalVstPluginProj.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		508817D809F0C9AE0071BF1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 508817E709F0CA040071BF1A /* MinimalVstPluginTarget.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+			};
+			name = Debug;
+		};
+		508817D909F0C9AE0071BF1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 508817E709F0CA040071BF1A /* MinimalVstPluginTarget.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MinimalVstPlugin_Prefix.pch;
+				STANDARD_C_PLUS_PLUS_LIBRARY_TYPE = static;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		508817C509F0C9740071BF1A /* Build configuration list for PBXProject "MinimalVstPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				508817C609F0C9740071BF1A /* Debug */,
+				508817C709F0C9740071BF1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		508817D709F0C9AE0071BF1A /* Build configuration list for PBXNativeTarget "MinimalVstPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				508817D809F0C9AE0071BF1A /* Debug */,
+				508817D909F0C9AE0071BF1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 508817C409F0C9740071BF1A /* Project object */;
+}

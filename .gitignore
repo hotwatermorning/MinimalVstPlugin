@@ -1,0 +1,13 @@
+build/
+
+# Xcode関連の除外設定
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+**/*.xcodeproj/*
+!**/*.xcodeproj/project.pbxproj
+!*/xcodeproj/default.*
+!**/*.xcodeproj/default.*
+*.xcworkspace/*
+!*.xcworkspace/contents.xcworkspacedata
+**/*.xcworkspace/*
+!**/*.xcworkspace/contents.xcworkspacedata
