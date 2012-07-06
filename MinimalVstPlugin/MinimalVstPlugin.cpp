@@ -54,7 +54,7 @@ struct MinimalVstPlugin
 
 }   //namespace hwm
 
-//! HOSTがVSTをロード使用としたときに呼ばれるファクトリ関数
+//! HOSTがVSTをロードしようとしたときに呼ばれるファクトリ関数
 AudioEffect *
         createEffectInstance(audioMasterCallback audioMaster)
 {
